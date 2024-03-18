@@ -1,0 +1,11 @@
+Notes:
+
+I have two potential ideas on how we might test non-determinisitc functions.
+
+1. Calculate an expected output and compare this to the average of multiple runs of the program.
+   In the example given, the probability of True/False output is known. Therefore, we could calculate the expected
+   output and compare this to the average output.
+
+2. Rather than testing the final unpredictable output, we could implement tests that target specific values
+   within the function in an attempt to test the inner workings of the function (rather than treating it as
+   a black-box).
